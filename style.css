@@ -1,0 +1,215 @@
+body {
+  background-color: black;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+body p, body span {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+body button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 25px;
+}
+body button:hover {
+  color: yellow;
+  border: 1px solid yellow;
+}
+body .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .navbar h2 {
+  margin: 19px 10px;
+  font-size: 30px;
+}
+body .navbar-right {
+  display: flex;
+  flex-direction: column;
+}
+body .navbar-right #navbar-menu {
+  visibility: hidden;
+  position: absolute;
+  top: -500;
+}
+body .navbar-right-display {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 10px;
+}
+body .navbar-right-display span {
+  margin: 19px 10px;
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+body .navbar-right-display-cart {
+  background-color: rgb(41, 17, 19);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 350px;
+  position: absolute;
+  top: 8%;
+  right: 1.3%;
+  z-index: 2;
+}
+body .navbar-right-display-cart-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+body .navbar-right-display-cart-items-picture {
+  margin: 10px;
+}
+body .navbar-right-display-cart-items-picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+body .navbar-right-display-cart-items-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+}
+body .navbar-right-display-cart-items-text h6 {
+  margin: 0;
+  font-size: 13px;
+  flex-wrap: wrap;
+  max-width: 100px;
+}
+body .navbar-right-display-cart-items-text p {
+  margin: 0;
+  font-size: 15px;
+}
+body .navbar-right-display-cart-items-delete {
+  margin: 10px;
+}
+body .navbar-right-display-cart-items-delete i {
+  color: white;
+}
+body .navbar-right-display-cart-items-delete i .itemDeleteID {
+  display: none;
+}
+body .navbar-right-display-cart-total {
+  margin: 10px;
+  text-align: center;
+}
+body .navbar-right-display-cart-total h5 {
+  margin: 0;
+  font-size: 20px;
+}
+body .navbar-right-display-cart-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .navbar-right-display-cart-buttons button {
+  margin: 10px;
+  width: 75px;
+}
+body .welcomePage-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .welcomePage-content-image {
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+body .welcomePage-content-text {
+  position: absolute;
+  color: white;
+}
+body .welcomePage-content-text h1 {
+  font-family: "Nunito", sans-serif;
+}
+body .welcomePage-content-text p {
+  font-family: "Josefin Sans", sans-serif;
+}
+body .searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: 15px 0;
+}
+body .searchBar-image {
+  width: 100%;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+body .searchBar-content {
+  position: absolute;
+  top: 25%;
+  color: white;
+}
+body .searchBar-content form button {
+  display: none;
+}
+body .products-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0vh 10vw;
+}
+body .products-gallery .products-card {
+  display: inline-block;
+  width: 27.333%;
+  margin: 20px;
+  border: 15px solid grey;
+  position: relative;
+}
+body .products-gallery .products-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .products-gallery .products-card .products-overlay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(88, 35, 34, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+body .products-gallery .products-card .products-overlay > * {
+  transform: translateY(-30px);
+  transition: transform 0.25s;
+}
+body .products-gallery .products-card .products-overlay:hover {
+  opacity: 1;
+}
+body .products-gallery .products-card .products-overlay:hover > * {
+  transform: translateY(0);
+}/*# sourceMappingURL=style.css.map */
